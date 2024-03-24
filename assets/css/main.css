@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+/* font-family: "Roboto", sans-serif; */
+
+:root {
+  --bg-color: #f2e0e0;
+  --text-color: #6c757d;
+  --accent-color: #e1ca86;
+  --contrast-color: #3d464d;
+  --gray-color: #99a1a7;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ====================== General rules ================= */
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main.main {
+  flex: 1 1 auto;
+}
+
+.form-control:focus {
+  color: var(--text-color);
+  border-color: var(--accent-color);
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: var(--gray-color);
+}
+
+.btn-warning {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-outline-warning {
+  border-color: var(--accent-color);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+section {
+    padding: 50px 0;
+}
+
+.section-title span {
+    background: var(--bg-color);
+    padding-right: 10px;
+}
+
+.section-title {
+    
+    text-transform: uppercase;
+    color: var(--contrast-color);
+    font-weight: 700;
+}
+/* 
+.section-title::after {
+    position: absolute;
+    content: '';
+    
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: -1;
+} */
+
+/* ====================== General rules ================= */
+
+/* ====================== Header rules ================= */
+
+ul.social-icons {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul.social-icons li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+ul.social-icons a {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  float: left;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid brown;
+  transition: all 0.6s;
+}
+
+ul.social-icons a:hover {
+  background: var(--contrast-color);
+  color: var(--accent-color);
+}
+
+.header-top .btn {
+  background-color: rgb(176, 223, 208);
+}
+
+.header-logo {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transition: all 0.6s;
+}
+
+.header-logo:hover {
+  color: brown;
+}
+
+.cart-buttons .btn {
+  color: var(--contrast-color);
+  transition: all 0.6s;
+}
+
+.cart-buttons .btn:hover {
+  border: 1px solid var(--contrast-color);
+}
+
+.header-bottom .navbar {
+  background-color: var(--contrast-color) !important;
+}
+
+.navbar-brand img {
+  width: 30px;
+  height: auto;
+}
+
+.nav-link {
+  color: aquamarine;
+  transition: all 0.5s;
+  letter-spacing: 0.1rem;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+  scale: 1.1;
+}
+
+.header-bottom .navbar .nav-link.active {
+  color: var(--accent-color);
+}
+
+.header-bottom .navbar .dropdown-menu {
+  margin-top: 7px;
+}
+
+.header-bottom {
+  border-top: 3px solid var(--accent-color);
+  box-shadow: 0 10px 10px rgba(80, 210, 143, 0.3);
+}
+
+.header-bottom .navbar-brand {
+  padding-left: 0px;
+}
+
+
+/* ====================== Header rules ================= */
+
+/* ====================== Main rules ================= */
+
+/* ====================== Carousel ================= */
+
+.carousel-caption {
+    text-shadow: 2px 2px 3px rgb(4, 48, 17);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+/* ====================== Carousel ================= */
+
+/* ====================== Advantages ================= */
+
+.advantages .item {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .6s;
+    
+}
+
+.advantages .item:hover {
+    box-shadow: 0px 15px 30px green;
+}
+
+.advantages i {
+    font-size: 70px;
+    color: var(--accent-color);
+    
+}
+
+.advantages i:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+/* ====================== Advantages ================= */
+
+/* ====================== Featured products ================= */
+
+/* ====================== Product card ================= */
+
+.product-card {
+    transition: all .6s;
+    border: 2px solid brown;
+    border-radius: 20px;
+    background-color: rgb(202, 226, 219);
+    position: relative;
+    padding-top: 10px;
+}
+
+.product-card img {
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 10px 5px 5px var(--gray-color);
+}
+
+.product-card-offer {
+    color: aliceblue;
+    /* position: absolute;
+    top: 5px;
+    right: 5px; */
+    text-transform: uppercase;
+    
+}
+
+
+
+.product-card-offer>div {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(41, 6, 79);
+    
+}
+
+.offer-hit {
+    background-color: chocolate;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+}
+
+.offer-new {
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    font-size: 14px;
+}
+
+.product-thumb img {
+    max-height: 250px;
+    
+}
+
+.product-details {
+    padding: 10px 20px;
+}
+
+.product-details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.product-details h4 a {
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    transition: all .6s;
+}
+
+.product-details h4 a:hover {
+    color: brown;
+    scale: 1.05;
+}
+
+.product-excerpt {
+    height: 67px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+} 
+
+.product-bottom-details {
+    border-top: 1px solid var(--gray-color);
+    padding-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 18px;
+    color: brown;
+    font-weight: 700;
+}
+
+.product-price small {
+    color: var(--gray-color);
+    text-decoration: line-through;
+    margin-right: 20px;
+}
+
+.owl-carousel-full .owl-item img {
+    display: inline-block;
+    width: auto;
+}
+
+/* ====================== Product card ================= */
+
+
+
+/* ====================== Featured products ================= */
+
+/* ====================== About us ================= */
+
+.about-us, .about-us span {
+    background-color: aliceblue;
+}
+/* 
+.about-us 
+.section-title::after {
+    position: absolute;
+    content: '';
+    
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: 1;
+    margin-left: 180px;
+    width: 1200px;
+} */
+
+.footer-icons i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.footer-icons i {
+    gap: 20px;
+}
+
+.footer h4 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    transition: all .6s;
+}
+
+.footer h4:hover {
+    scale: 1.05;
+}
+
+.footer a, .footer li {
+    color: aliceblue;
+    transition: all .6s;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+    
+}
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all .3s;
+    border: 2px solid brown;
+    z-index: 10;
+}
+
+
+#bottom {
+    position: fixed;
+    top: 250px;
+    right: 20px;
+    background-color: var(--accent-color);
+    
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all .3s;
+    border: 2px solid brown;
+    z-index: 10;
+}
+
+.offcanvasCart-table .product-img-td {
+    width: 70px;
+    text-align: center;
+}
+
+.offcanvasCart-table a {
+    text-decoration: none;
+    display: block;
+}
+
+.offcanvasCart-table a:hover {
+    text-decoration: underline;
+}
+
+.offcanvasCart-table img {
+    max-width: 70px;
+}
+
+
+
+
+
+/* ====================== About us ================= */
+
+
+
+/* ====================== Main rules ================= */
+
+/* ====================== Category page ================= */
+
+.breadcrumbs {
+    margin: 30px 0;
+    background-color: rgb(178, 234, 234);
+    padding: 1rem;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: brown;
+    transition: all .5s;
+    margin-right: 0.5rem;
+}
+
+.breadcrumbs a:hover {
+    color: blue;
+    font-size: 18px;
+    
+}
+
+.breadcrumbs a::after {
+    content: '/';
+    padding-left: 0.5rem;
+    color: brown;
+}
+
+.sidebar {
+    
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    background-color: aquamarine;
+    color: brown;
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .section-title span {
+    
+    background-color: rgb(214, 255, 127);
+    
+}
+
+.filter-block:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.filter-block .form-check {
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    border-color: aquamarine;
+    
+    background-color: brown;
+}
+
+.form-check-label:hover {
+    background-color: brown;
+    color: aquamarine;
+}
+
+.cat-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-btn {
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.page-link {
+    background-color: brown;
+    color: aquamarine;
+}
+
+.page-link:hover {
+    background-color: green;
+    color: gold;
+}
+
+.page-link.active {
+    background-color: aquamarine;
+    color: brown;
+}
+
+.page-link.active:hover {
+    background-color: gold;
+    color: green;
+}
+/* 
+.section-title::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed var(--text-color);
+    z-index: 1;
+    margin-left: 220px;
+    max-width: 700px;
+} */
+
+.section-title span {
+    background-color: aliceblue;
+}
+
+
+/* ====================== Category page ================= */
+
+/* ====================== Product page ================= */
+
+.product-content .product-price {
+    font-size: 25px;
+}
+
+.product-content .input-group {
+    width: 250px;
+}
+
+.card-title i {
+    color: brown;
+}
+
+.card-title {
+    color: green;
+}
+
+.product-content .card {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.product-content .card ul li i {
+    font-weight: 900;
+    color: red;
+    font-size: 20px;
+}
+
+.product-content-details {
+    background-color: #6c757d;
+}
+
+.tab-pane {
+    color: aliceblue;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+    background-color: aquamarine;
+    color: brown;
+    font-weight: 700;
+}
+
+.page-register .section-title span {
+    background-color: white;
+    color: green;
+}
+
+label.required::before {
+    content: '*';
+    color: brown;
+    font-weight: 900;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.cart-content table img {
+    max-width: 70px;
+}
+
+.cart-content table th {
+    text-align: center;
+}
+
+.cart-content table td, .cart-content table input {
+    padding: 1rem;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.cart-content-title {
+    
+    display: block;
+    
+}
+
+.cart-content-title:hover {
+    scale: 1.05;
+    text-decoration: underline;
+}
+
+.cart-qty {
+    width: 70px;
+}
+
+.tr-flex {
+    align-items: center;
+}
+
+.cart-summary .section-title span {
+    background-color: white;
+}
+
+
+.cart-summary h3 {
+    color: var(--contrast-color);
+}
+
+.cart-summary .btn {
+    padding: 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: gold;
+}
+
+.cart-summary .btn:hover {
+    background-color: gold;
+    color: green;
+}
+
+
+.btn-coupon {
+    color: red;
+    text-decoration: none;
+}
+
+.btn-coupon:hover {
+    
+    text-decoration: underline;
+    scale: 1.05;
+}
+
+tfoot td {
+    font-size: 24px;
+    font-weight: 900;
+    
+    transition: all .5s;
+}
+
+tfoot td:hover {
+    scale: 1.05;
+    color: red;
+    text-decoration: underline;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    color: green;
+    border-color: brown;
+}
+
+
+/* ====================== Product page ================= */
+
+@media only screen and (min-width: 992px) {
+  .header-bottom .navbar .dropCarouselropdown-menu {
+    margin-left: 0;
+    border: 0;
+  }
+
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .header-bottom .navbar .dropend .dropdown-menu {
+    padding-left: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar .collapse-filters {
+        display: block;
+    }
+    .sidebar .collapse-filters-btn {
+        display: none;
+        
+    }
+}
+
+
+
